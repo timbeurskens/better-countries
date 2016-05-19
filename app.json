@@ -1,0 +1,6 @@
+{
+  "name": "better-countries",
+  "description": "Country list based on target groups",
+  "keywords": ["node", "express"],
+  "image": "heroku/nodejs"
+}
