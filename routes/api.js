@@ -25,7 +25,8 @@ router.get('/sorted', function(req, res, next){
     var compareFunction = countrygraphs.getCountryCompareFunction(nlIndex, countries);
     countries.sort(compareFunction);
     console.log(countries);
-    var nameList = countrygraphs.getNameDistanceList(nlIndex,countries);
+    nlIndex = countrygraphs.getCountryCodeIndex("NL", countries);
+    var nameList = countrygraphs.getNameList(countries);
     console.log(nameList);
     console.log(nameList.length);
     res.send(nameList);
